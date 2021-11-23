@@ -1,0 +1,15 @@
+/*<p id="p1": un paragraphe particulier*/
+#p1{
+    color :red
+    }
+    /*<p class="p1" : un autre paragraphe particulier*/
+    .p1{
+        color:saddlebrown;
+    }
+    #para{
+        border: salmon;
+    }
+    
+    h1{
+        color: springgreen;
+    }

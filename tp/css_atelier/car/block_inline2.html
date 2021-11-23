@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block inline</title>
+    <style>
+        * {
+            color: blue;
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        }
+
+        p {
+            padding: 1em;
+            border: 1px solid black;
+        }
+
+        span {
+            padding: 0.5em;
+            border: 1px solid green;
+            /*on rend la boîte visible, quel que soit son type*/
+            background-color: yellow;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .block {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Inline et block </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda saepe accusantium explicabo voluptas animi
+        nesciunt eius quos aliquam, voluptatum facilis quaerat consectetur illo non accusamus molestiae consequuntur
+        repudiandae dolor iure. ipsum dolor sit amet, consectetur adipiscing elit.
+        <span class="inline">Mauris tempus turpis id ante mollis dignissim.</span> Nam sed dolor non tortor lacinia
+        lob</span>
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <span class="block">Mauris tempus turpis id ante mollis dignissim.</span>
+        Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+    </p>
+
+</body>
+
+</html>

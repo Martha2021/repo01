@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Date et heure de maintenant</title>
+   
+  </head>
+  <body>
+    //premier paragrahphe
+    <p id="affichage">date du jour</p>
+    
+    //deuxième paragraphe
+    <p id="dateToday"></p>
+    <SCRIPT LANGUAGE="JavaScript">
+
+// on instancie lobjet Date()    
+      var maintenant=new Date();
+// on recuperer heure minut sec objet date()
+      var heure=maintenant.getHours();
+      var minute=maintenant.getMinutes();
+      var seconde=maintenant.getSeconds();
+// on recupere la date dans l'objet
+      var jour=maintenant.getDate();
+      var mois=maintenant.getMonth()+1;
+      var an=maintenant.getFullYear();
+//il faut rajoute +1 au mois, car c'est le mois échu.
+    document.write("Nous sommes le ",jour,"/",mois,"/",an,"<br>");
+    document.write("<br>");
+    document.write("il est ",heure," heures ",minute," minutes ",seconde," secondes");
+      </SCRIPT>
+    
+  </body>
+</html>

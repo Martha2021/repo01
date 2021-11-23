@@ -1,0 +1,19 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(184, 90, 192);
+  /*couleur 1ère ligne*/
+  }
+  
+  td, th {
+    border: 5px solid #cf4141;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even){
+    background-color: #c6e615;
+    border: 1px solid #1b0101;
+    background-color: rgb(43, 220, 226);
+  }/*couleur 2ème ligne*/

@@ -1,0 +1,14 @@
+/*mise en page d'un élément de type block*/
+.div-para{
+    background-color: yellowgreen;
+    font-weight: bold;
+    float: right;
+    }
+    
+.span-trois{
+    color: purple;
+    font-weight: bold;
+}
+img {
+    width: 250px;
+}

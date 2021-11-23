@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte de jQuery</title>
+</head>
+
+<body>
+
+</script>
+<h2>Manipulation du DOM HTML</h2>
+
+<ul>
+    <li>Elèment n°1 de la liste </li>
+    <li>Elèment n°2 de la liste </li>
+    <li>Elèment n°3 de la liste </li>
+    <li>Elèment n°4 de la liste </li>
+    <ul>
+        <table>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+            </tr>
+            <tr>
+                <td>Pierre</td>
+                <td>Giraud</td>
+            </tr>
+            <tr>
+                <td>Victor</td>
+                <td>Durand</td>
+            </tr>
+            <tr>
+                <td>Pauline</td>
+                <td>Joly</td>
+            </tr>
+        </table>
+
+        <script src='jquery.3.6.0.js'></script>
+        
+        <script>
+            $(document).ready(function () {
+                $('li').filter(':nth-child(even)').css('color', 'blue');css('color', 'blue');
+                $('tr').filter(':nth-child(odd)').css('background-color', 'orange')
+
+            });
+            // nth : ènieme élément de. Even=paire, odd=impaire
+        </script>
+
+
+    </body>
+</html>
+        

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+</head>
+
+<body>
+    <script>
+        liste = ["rouge", "jaune", "bleu", "noire"];
+        tableau01 = ["poire", "fraise", 234, "kiwi", true, liste];
+        //affiche Le deuxième élément
+        document.write("Tableau tel qui se présente dans le code = " + tableau01[0] + ", " + tableau01[1] + ", " +
+            tableau01[2] + ", " + tableau01[3] + ", " + tableau01[4] + ", liste")
+        document.write("<br> Tableau afficher par document.write = " + tableau01);
+        document.write("<br> Liste = " + liste);
+        document.write("<br> Le deuxième élément du tableau = " + tableau01[1]);
+        document.write("<br> Le nombre d'élément du tableau = " + tableau01.length);
+        document.write("<br> Kiwi = " + (tableau01.indexOf('kiwi') + 1) +
+            " ème élément (recherche par 'kiwi', attention +1)");
+        document.write("<br> Le deuxième élément est du type : " + typeof (tableau01[1]));
+        document.write("<br> Le troisième élément est du type : " + typeof (tableau01[2]));
+        document.write("<br> Le cinquième élément est du type : " + typeof (tableau01[5]));
+        document.write("<br> Le troisième élément de la liste est : " + tableau01[5][2]);
+    </script>
+</body>
+
+</html>

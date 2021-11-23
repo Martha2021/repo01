@@ -1,0 +1,14 @@
+/*mise en page d'un élément de type block*/
+h1{
+    border: 10px solid gray;
+    }
+    #para{
+                color: rgb(226, 43, 73);
+    }
+/*élément inline strong encadré*/
+    strong{
+        border: 5px solid yellow;
+    }
+    .p1{
+        
+    }

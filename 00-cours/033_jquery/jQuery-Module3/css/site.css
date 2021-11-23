@@ -1,0 +1,43 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    color: "blue";
+}
+
+a{
+    color:white;
+}
+
+#titreprincipal{
+    font-style: italic;
+}
+
+.paragraphs{
+    background-color: lightsteelblue;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.green{
+    background-color: green;
+    color: white;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.orangered{
+    background-color: orangered;
+    color: white;
+}
+
+.divs{
+    color: grey;
+}

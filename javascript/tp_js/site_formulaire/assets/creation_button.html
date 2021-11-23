@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Récupérer la valeur d'un input texte</title>
+    <style>
+    #champ{
+        background-color: yellow;
+      border: 1px;
+    }
+    #recuperer{
+      background-color: grey;
+      border: 10px;
+    }
+  </style>
+  </head>
+  <body>
+    <!--  Création du champ -->
+    <input type="text" placeholder="Entrez une valeur ici" id="champ">
+    <!-- Création du bouton -->
+    <button id="recuperer" onclick="getValue();">Récupérer la valeur</button>
+    <!-- Emplacement "affichage" -->
+    <br>
+    <div id="affichage">  </div>
+    <script>
+        function getValue() {
+            // Sélectionner l'élément input et récupérer sa valeur
+            var maVariable = document.getElementById("champ").value;
+            // Afficher la valeur
+            //document.write(maVariable);
+            // Ecrit a la place de "resultat" 
+            document.getElementById('affichage').innerHTML = maVariable;
+            // Ou alerte
+            //alert(maVariable);
+        }
+    </script>
+  </body>
+</html>

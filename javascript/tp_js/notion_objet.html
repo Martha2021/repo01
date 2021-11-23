@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h2>Un objet dans Javascript</h2> <!-- titre dans la page -->
+  <p>Une methode dans un objet est une fonction, elle est alignee avec ses proprietes.</p>
+
+  
+  <p id="personne"></p> <!-- énoncé d'un paragraphe -->
+  <p id="voiture"></p> <!-- énoncé d'un paragraphe -->
+  <p id="caracter"></p> <!-- énoncé d'un paragraphe -->
+  <p id="menu"></p> <!-- énoncé d'un paragraphe -->
+ 
+  <script>
+    
+    // creation de l'objet:const=constante
+    const personne = {
+      firstName: "John",//propriété
+      lastName: "Doe",//propriété
+      id: 5566,//propriété
+      fullName: function () {  //la méthode
+        return this.firstName + " " + this.lastName;//ce qui est demandé au logiciel de faire, return this
+      }
+    };
+   // création d'un objet voiture
+    const voiture = {
+      marque: "Rolls",
+      couleur: "noire ebene",
+      kilometrage: "150000 km",
+      prix: "220000 euros",
+      puissance: "30 chevaux",
+      caracteristiques: function () { //le detail de la methode
+        return this.marque + " "+ "  a vendre, " + this.couleur + "  , " + " moins de " + this.kilometrage + " " + " pour un prix negociable de " + this.prix + " " + "tres puissante, elle va au dela de " + this.puissance;
+      }
+    };
+
+    // creation de l'objet:const=constante
+    const menu = {
+      entree: "salade de saison",//propriété
+      plat: "brochette agneau",//propriété
+      desert: "salade de fruits",//propriété
+      dejeuner: function () {  //la méthode
+        return this.entree + " ,  " + this.plat + " , " + this.desert;//ce qui est demandé au logiciel de faire, return this
+      }
+    };
+    // afficher l'objet
+    document.getElementById("personne").innerHTML = personne.fullName();//en passant par la méthode
+    document.getElementById("voiture").innerHTML = voiture.caracteristiques();//en passant par la méthode
+    document.getElementById("caracter").innerHTML = voiture.couleur;//en passant par la méthode
+    document.getElementById("menu").innerHTML = menu.dejeuner();//en passant par la fonction
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function fn() {
+        let foo = "bar";
+        var foo2 = "bar";
+        if (true) {
+            let foo; // pas d'erreur, foo === undefined
+            var foo2;
+            // Attention, les déclarations "var" ne sont pas scopées au niveau bloc foo2 est
+            // en réalité écrasé !
+            foo = "qux";
+            foo2 = "qux2";
+            console.log(foo);
+            // "qux", la variable appartient au scope de son blocs (le "if")
+            console.log(foo2);
+            // "qux"
+        }
+        console.log(foo);
+        // "bar", la variable appartient au scope de son bloc (la fonction "fn")
+        console.log(foo2);
+        // "qux" 
+    }
+    </body>script>
+</body>
+</html>

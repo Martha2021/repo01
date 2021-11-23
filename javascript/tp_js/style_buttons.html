@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript_style</title>
+<meta name="keywords" content="fontsize, color,fontstyle,italic">
+<meta name="description" content="javascript peut changer le style d'un document ou d'une page web">
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap');
+    </style>
+    <!--on a importé d'une police de caractère de google font=document le code-->
+</head>
+<body>
+
+<h2>Que peut faire JavaScript ?</h2>
+
+<p id="demo" Name="toto">JavaScript peut changer le style d'un élément de HTML.</p>
+var nom=window.prompt("cliquez pour faire apparaître le titre");
+document.write("javascript peut changer le style d'un document");
+<button onclick="document.getElementById('demo').style.fontSize='55px'">Click Me!</button>
+
+<button onclick="document.getElementById('demo').style.fontSize='55px'">Click Me!</button>
+
+<button onclick="document.getElementById('demo').style.color='yellow'">couleur</button>
+
+<button onclick="document.getElementById('demo').style.fontStyle='italic'"></button>
+<button onclick="document.getElementsByName('toto').style.fontFamily='Amaranth'><googlefont></button>
+   
+       
+   /*font-family: 'Amaranth', sans-serif;*/    
+</body>
+</html>

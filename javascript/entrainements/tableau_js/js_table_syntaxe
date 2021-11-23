@@ -1,0 +1,24 @@
+const aTab = []; /* initialisation d'un tableau vide*/
+/*données de type chaîne*/
+const aFruits = ["pomme", "poire", "banane"]; // Données de type chaîne
+const aEntiers = [123, 456, 789]; // Données de type entier
+
+const aTab = ["pomme", 123, "poire", 456];
+/* initialisation d'un tableau avec "Array" */
+const aTab = new Array(); // Tableau vide
+const aTab = Array(); // Tableau vide
+const aTab = new Array(5); // Tableau vide qui contiendra 5 éléments
+const aTab = Array(5); // Tableau vide qui contiendra 5 éléments
+const aTab = new Array("pomme", "poire", "banane"); Tableau avec données
+const aTab = Array("pomme", "poire", "banane"); // Tableau avec données
+/* déclarer un tableau de fruits*/
+
+const aFruits = [];
+/*ou*/
+const aFruits = ["pomme", "poire", "banane", "fraise", "abricot"];
+aFruits[0] = ["pomme"];
+aFruits[1] = ["poire"];
+aFruits[2] = ["bannane"];
+aFruits[3] = ["fraise"];
+aFruits[4] = ["abrico"];
+aFruits[1] = ["poire"];

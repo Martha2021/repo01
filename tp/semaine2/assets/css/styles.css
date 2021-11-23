@@ -1,0 +1,61 @@
+/* pour tous les paragraphes */
+p {
+    /*ils auront exactement une largeur de 100px*/
+    width: 450px;
+    /* hauteur defninie automatiquement en fonction de la taille du contenu*/
+    height: 400px;
+    /*la distance entre le contenu et la bordure est 20px a droite et a gauche et est 10px en haut et en bas*/
+    padding: 10px
+        /* haut */
+        20px
+        /* apres p */
+        10px
+        /* bas */
+        20px
+        /* avant p */
+    ;
+    /*on definit une bordure noire large de 5px*/
+    /*la distance minimale entre un paragraphe et une boite au dessus ou en dessous sera de 20px*/
+    margin: 20px 0 20px 0;
+    float: left;
+    text-align: justify;
+
+
+}
+
+/* pour un seul paragraphe a la fois mettre <div id="blabla">/div> */
+h1 {
+    color: rgb(41, 3, 30);
+}
+
+h2 {
+    color: black;
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*  background-color: rgba(82, 75, 80, 0.7);
+   background-blend-mode: lighten; */
+    background-attachment: fixed;
+    height: auto;
+    width: auto;
+}
+
+img {
+    /*     border: 30px solid ;*/
+    /*border: 20px solid ; Pour mettre un cadre plein */
+    padding: 5px 20px 5px 0px;
+    /*     border-image: linear-gradient(green,yellow) 50 ;*/
+    float: left;
+}
+
+video {
+    /* border: red solid 1px;
+ */
+    width: 300px;
+    padding: 0px 20px 20px 0px;
+    float: left;
+}

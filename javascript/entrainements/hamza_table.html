@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+</head>
+<body>
+    <script>
+        
+        liste =[" rouge"," jaune "," bleu", " noire"]; 
+        tableau01=[" poire", "fraise", 234,"kiwi", true, liste];
+        document.write("voici ma liste : " + liste);
+        document.write("<br>");
+        document.write("voici la liste des fruits de mon tableau  : " + tableau01);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("voici mon tableau complet + la liste : " + tableau01+liste);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>Le troisième élément de la liste est : " + liste [2]);
+        document.write("<br>Le quatrième élément du tableau est : " + tableau01 [3]);
+        document.write("<br>Le nombre d'élément de ma liste et de mon tableau est : " + (tableau01.length + liste.length));
+        document.write("<br>" + liste.indexOf('bleu'));
+        document.write("<br>" + tableau01.indexOf('kiwi'));
+        document.write("<br>Le type des données du tableau est : " + typeof tableau01[2]);
+        document.write("<br>" + tableau01 [5][1]);
+  
+
+        </script>
+</body>
+</html>

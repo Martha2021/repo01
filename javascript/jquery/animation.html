@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation d'une div</title>
+
+        <script src = "jquery.3.6.0.js" ></script>
+   
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var div = $("div");
+                div.animate({
+                    height: '300px',
+                    opacity: '0.4'
+                }, "slow");
+                div.animate({
+                    height: '400px',
+                    opacity: '0.8'
+                }, "slow");
+                div.animate({
+                    height: '100px',
+                    opacity: '0.4'
+                }, "slow");
+                div.animate({
+                    height: '500px',
+                    opacity: '0.2'
+                }, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>start animation</button>
+    <p>To manipulate the position, remember to first set the CSS position property of the element</p>
+    <div style="background:green; height:100px; width:100px; position:absolute;">
+    ici ca bouge<img src="afro.jpg"></div>
+    </body>
+</html>

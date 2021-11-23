@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte de jQuery</title>
+</head>
+
+<body>
+    <h1>Manipulation du DOM HTML</h1>
+    
+    <p>Un premier paragraphe en HTML</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error blanditiis doloribus rerum a non ut veritatis
+        autem. Consequuntur tempore officia soluta, hic dignissimos eligendi tenetur praesentium dolorum, fuga vitae
+        fugit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum modi sapiente minus! Voluptatem a nostrum labore
+        doloremque non quidem officia recusandae velit, repellendus rerum assumenda aliquam, molestiae quia, excepturi
+        doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestias, ratione cupiditate qui iste rem
+        doloremque ullam libero ipsam harum. Sapiente soluta rerum amet, corporis iure explicabo enim voluptatem nobis.
+    </p>
+    
+    <script src='jquery.3.6.0.js'></script>
+
+    <script>
+        $(document).ready(function () {
+            $('h1').first().css('color', 'purple');
+            $('p').first().css('color', 'red');
+            $('p').last().css('color', 'blue');
+
+        });
+ // Nouvelle fonction : on $(document).ready(fonction(){ });
+        $(document).ready(function () {
+            $('p').eq(1).css('color', 'grey');
+            $('p').eq(-2).css('color', 'green');
+
+        });
+    </script>
+    
+</body>
+
+< /html>

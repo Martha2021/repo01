@@ -1,0 +1,32 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+  h1 {
+    color: #;
+    /*     font-family: 'Rubik Beastly', cursive;*/
+    text-align: left;
+    font-size: 30px;
+  }
+
+  h2 {
+    color: blue;
+    text-align: left;
+    font-family: purple;
+    font-size: 40px;
+  }
+
+  /* fermeture de h2 */
+  @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap');
+
+  p {
+    font-family: 'Amaranth', sans-serif;
+    /* police de caractère */
+    font-size: 30px;
+    color: gray;
+    text-align: left;
+  }
+
+  img {
+    margin-left: auto;
+    /* position de l'image */
+    border-image: radial-gradient(blueviolet, yellow) 50;
+  }

@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+}
+
+p {
+    text-align: justify;
+}
+
+#details {
+    color: grey;
+}
+
+.grey {
+    color: darkgrey;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}

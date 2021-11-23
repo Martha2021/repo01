@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lucida Sans';
+}
+
+.blog-title {
+    color: white;
+    background-color: lightgray;
+}
+
+.article-title {
+    text-align: left;
+}
+
+.illustration {
+    width: 100px;
+}
+
+p {
+    text-align: justify;
+    color: grey;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+form {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+footer p {
+    text-align: right;
+}
+
+p.left {
+    text-align: left;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const aFruits = ["pomme", "poire", "banane", "fraise", "abricot"];
+        const nb = aFruits.length;
+        document.write("Mon premier tableau aFruits contient " + nb + "  éléments : ");
+        document.write("<br>")
+        //la fonction for...in
+        for (var sFruit in aFruits) {
+            document.write(" " + aFruits[sFruit]);
+        }
+        document.write("<br>")
+
+        document.write("<br>")
+        //indiquer la position de la banane dans le tableau
+        document.write(aFruits.indexOf('banane'));
+    </script>
+
+</body>
+
+</html>
