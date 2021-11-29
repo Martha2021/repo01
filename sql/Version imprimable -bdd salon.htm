@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+  <link rel="icon" href="http://localhost:8090/phpmyadmin/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost:8090/phpmyadmin/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="Version%20imprimable%20-bdd%20salon_fichiers/print.css">
+    <title>Version imprimable - phpMyAdmin 5.1.1</title>
+    <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery_004.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery-migrate.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/sprintf.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/ajax.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/keyhandler.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/bootstrap.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery-ui.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/js.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery_003.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery-ui-timepicker-addon.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery_002.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/jquery_005.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/menu_resizer.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/cross_framing_protection.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/rte.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/tracekit.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/error_report.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/messages.php"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/config.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/doclinks.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/functions.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/navigation.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/indexes.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/common.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/page_settings.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/drag_drop_import.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/shortcuts_handler.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/codemirror.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/sql.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/runmode.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/show-hint.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/sql-hint.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/lint.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/sql-lint.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="Version%20imprimable%20-bdd%20salon_fichiers/console.js"></script>
+
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+var firstDayOfCalendar = '0';
+var themeImagePath = '.\/themes\/original\/img\/';
+var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F5.7\u00252Fen\u00252F\u002525s.html';
+var maxInputVars = 1000;
+
+if ($.datepicker) {
+  $.datepicker.regional[''].closeText = 'Fermer';
+  $.datepicker.regional[''].prevText = 'Pr\u00E9c\u00E9dent';
+  $.datepicker.regional[''].nextText = 'Suivant';
+  $.datepicker.regional[''].currentText = 'Aujourd\u0027hui';
+  $.datepicker.regional[''].monthNames = [
+    'janvier',
+    'f\u00E9vrier',
+    'mars',
+    'avril',
+    'mai',
+    'juin',
+    'juillet',
+    'ao\u00FBt',
+    'septembre',
+    'octobre',
+    'novembre',
+    'd\u00E9cembre',
+  ];
+  $.datepicker.regional[''].monthNamesShort = [
+    'jan.',
+    'f\u00E9v.',
+    'mars',
+    'avr.',
+    'mai',
+    'juin',
+    'juil.',
+    'ao\u00FBt',
+    'sep.',
+    'oct.',
+    'nov.',
+    'd\u00E9c.',
+  ];
+  $.datepicker.regional[''].dayNames = [
+    'dimanche',
+    'lundi',
+    'mardi',
+    'mercredi',
+    'jeudi',
+    'vendredi',
+    'samedi',
+  ];
+  $.datepicker.regional[''].dayNamesShort = [
+    'dim.',
+    'lun.',
+    'mar.',
+    'mer.',
+    'jeu.',
+    'ven.',
+    'sam.',
+  ];
+  $.datepicker.regional[''].dayNamesMin = [
+    'di',
+    'lu',
+    'ma',
+    'me',
+    'je',
+    've',
+    'sa',
+  ];
+  $.datepicker.regional[''].weekHeader = 'sem';
+  $.datepicker.regional[''].showMonthAfterYear = false;
+  $.datepicker.regional[''].yearSuffix = 'Aucun\u0028e\u0029';
+  $.extend($.datepicker._defaults, $.datepicker.regional['']);
+}
+
+if ($.timepicker) {
+  $.timepicker.regional[''].timeText = 'Temps';
+  $.timepicker.regional[''].hourText = 'heure';
+  $.timepicker.regional[''].minuteText = 'minute';
+  $.timepicker.regional[''].secondText = 'seconde';
+  $.extend($.timepicker._defaults, $.timepicker.regional['']);
+}
+
+function extendingValidatorMessages () {
+  $.extend($.validator.messages, {
+    required: 'Ce\u0020champ\u0020est\u0020obligatoire',
+    remote: 'Merci\u0020de\u0020corriger\u0020ce\u0020champ',
+    email: 'Merci\u0020de\u0020saisir\u0020une\u0020adresse\u0020de\u0020courriel\u0020valide',
+    url: 'Merci\u0020de\u0020saisir\u0020une\u0020URL\u0020valide',
+    date: 'Merci\u0020de\u0020saisir\u0020une\u0020date\u0020valide',
+    dateISO: 'Merci\u0020de\u0020saisir\u0020une\u0020date\u0020valide\u0020\u0028ISO\u0029',
+    number: 'Merci\u0020de\u0020saisir\u0020un\u0020nombre\u0020valide',
+    creditcard: 'Merci\u0020de\u0020saisir\u0020un\u0020num\u00E9ro\u0020de\u0020carte\u0020de\u0020cr\u00E9dit\u0020valide',
+    digits: 'Merci\u0020de\u0020saisir\u0020uniquement\u0020des\u0020chiffres',
+    equalTo: 'Merci\u0020de\u0020saisir\u0020la\u0020m\u00EAme\u0020valeur\u0020\u00E0\u0020nouveau',
+    maxlength: $.validator.format('Merci\u0020de\u0020saisir\u0020au\u0020maximum\u0020\u007B0\u007D\u0020caract\u00E8res'),
+    minlength: $.validator.format('Merci\u0020de\u0020saisir\u0020au\u0020moins\u0020\u007B0\u007D\u0020caract\u00E8res'),
+    rangelength: $.validator.format('Merci\u0020de\u0020saisir\u0020une\u0020valeur\u0020d\u0027une\u0020longueur\u0020entre\u0020\u007B0\u007D\u0020et\u0020\u007B1\u007D\u0020caract\u00E8res'),
+    range: $.validator.format('Merci\u0020de\u0020saisir\u0020une\u0020valeur\u0020entre\u0020\u007B0\u007D\u0020et\u0020\u007B1\u007D'),
+    max: $.validator.format('Merci\u0020de\u0020saisir\u0020une\u0020valeur\u0020inf\u00E9rieure\u0020ou\u0020\u00E9gale\u0020\u00E0\u0020\u007B0\u007D'),
+    min: $.validator.format('Merci\u0020de\u0020saisir\u0020une\u0020valeur\u0020sup\u00E9rieure\u0020ou\u0020\u00E9gale\u0020\u00E0\u0020\u007B0\u007D'),
+    validationFunctionForDateTime: $.validator.format('Merci\u0020de\u0020saisir\u0020une\u0020date\u0020ou\u0020une\u0020heure\u0020valide'),
+    validationFunctionForHex: $.validator.format('Veuillez\u0020saisir\u0020une\u0020valeur\u0020hexad\u00E9cimale\u0020valide'),
+    validationFunctionForMd5: $.validator.format('Cette\u0020colonne\u0020ne\u0020peut\u0020pas\u0020contenir\u0020une\u0020valeur\u0020de\u002032\u0020caract\u00E8res'),
+    validationFunctionForAesDesEncrypt: $.validator.format('Ces\u0020fonctions\u0020sont\u0020destin\u00E9es\u0020\u00E0\u0020renvoyer\u0020un\u0020r\u00E9sultat\u0020binaire\u0020\u003B\u0020pour\u0020\u00E9viter\u0020des\u0020r\u00E9sultats\u0020incoh\u00E9rents,\u0020vous\u0020devez\u0020le\u0020stocker\u0020dans\u0020une\u0020colonne\u0020BINARY,\u0020VARBINARY\u0020ou\u0020BLOB.')
+  });
+}
+
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"fr",server:"1",table:"",db:"salon",token:"62564b5b6a29662d4f32693752392c69",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Parcourir",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"36000",session_gc_maxlifetime:"36000",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.1",auth_type:"cookie",user:"developpeur"});
+ConsoleEnterExecutes=false
+
+AJAX.scriptHandler
+  .add('vendor/jquery/jquery.min.js', 0)
+  .add('vendor/jquery/jquery-migrate.js', 0)
+  .add('vendor/sprintf.js', 1)
+  .add('ajax.js', 0)
+  .add('keyhandler.js', 1)
+  .add('vendor/bootstrap/bootstrap.bundle.min.js', 1)
+  .add('vendor/jquery/jquery-ui.min.js', 0)
+  .add('vendor/js.cookie.js', 1)
+  .add('vendor/jquery/jquery.mousewheel.js', 0)
+  .add('vendor/jquery/jquery.validate.js', 0)
+  .add('vendor/jquery/jquery-ui-timepicker-addon.js', 0)
+  .add('vendor/jquery/jquery.ba-hashchange-2.0.js', 0)
+  .add('vendor/jquery/jquery.debounce-1.0.6.js', 0)
+  .add('menu_resizer.js', 1)
+  .add('cross_framing_protection.js', 0)
+  .add('rte.js', 1)
+  .add('vendor/tracekit.js', 1)
+  .add('error_report.js', 1)
+  .add('messages.php', 0)
+  .add('config.js', 1)
+  .add('doclinks.js', 1)
+  .add('functions.js', 1)
+  .add('navigation.js', 1)
+  .add('indexes.js', 1)
+  .add('common.js', 1)
+  .add('page_settings.js', 1)
+  .add('drag_drop_import.js', 1)
+  .add('shortcuts_handler.js', 1)
+  .add('vendor/codemirror/lib/codemirror.js', 0)
+  .add('vendor/codemirror/mode/sql/sql.js', 0)
+  .add('vendor/codemirror/addon/runmode/runmode.js', 0)
+  .add('vendor/codemirror/addon/hint/show-hint.js', 0)
+  .add('vendor/codemirror/addon/hint/sql-hint.js', 0)
+  .add('vendor/codemirror/addon/lint/lint.js', 0)
+  .add('codemirror/addon/lint/sql-lint.js', 0)
+  .add('console.js', 1)
+;
+$(function() {
+        AJAX.fireOnload('vendor/sprintf.js');
+        AJAX.fireOnload('keyhandler.js');
+      AJAX.fireOnload('vendor/bootstrap/bootstrap.bundle.min.js');
+        AJAX.fireOnload('vendor/js.cookie.js');
+                AJAX.fireOnload('menu_resizer.js');
+        AJAX.fireOnload('rte.js');
+      AJAX.fireOnload('vendor/tracekit.js');
+      AJAX.fireOnload('error_report.js');
+        AJAX.fireOnload('config.js');
+      AJAX.fireOnload('doclinks.js');
+      AJAX.fireOnload('functions.js');
+      AJAX.fireOnload('navigation.js');
+      AJAX.fireOnload('indexes.js');
+      AJAX.fireOnload('common.js');
+      AJAX.fireOnload('page_settings.js');
+      AJAX.fireOnload('drag_drop_import.js');
+      AJAX.fireOnload('shortcuts_handler.js');
+                    AJAX.fireOnload('console.js');
+  });
+// ]]>
+</script>
+
+  <noscript><style>html{display:block}</style></noscript>
+</head>
+<body>
+  
+  
+  
+
+  
+      <noscript>
+      <div class="alert alert-danger" role="alert">
+  <img src="themes/dot.gif" title="" alt="" class="icon ic_s_error"> JavaScript doit être activé !
+</div>
+
+    </noscript>
+  
+  
+  
+
+  <div id="page_content">
+    
+
+    
+<h1>salon</h1>
+
+<div>
+      <div>
+      <h2>client</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Colonne</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Valeur par défaut</th>
+                    <th>Commentaires</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              ID
+                              <em>(Primaire)</em>
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              smallint(5)
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nom
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              varchar(255)
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              prenon
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              varchar(255)
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              mail
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              varchar(255)
+            </td>
+            <td>Oui</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              telephone
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              mediumint(10)
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Index</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nom de l'index</th>
+                <th>Type</th>
+                <th>Unique</th>
+                <th>Compressé</th>
+                <th>Colonne</th>
+                <th>Cardinalité</th>
+                <th>Interclassement</th>
+                <th>Null</th>
+                <th>Commentaire</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Oui</td>
+                  <td rowspan="1">Non</td>
+
+                                                          <td>
+                      ID
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>Non</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>fournisseur</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Colonne</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Valeur par défaut</th>
+                    <th>Commentaires</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              ID
+                              <em>(Primaire)</em>
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              smallint(5)
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              societe
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              varchar(255)
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              adresse
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              text
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              mail
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              varchar(255)
+            </td>
+            <td>Oui</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              telephone
+                          </td>
+            <td dir="ltr" class="nowrap" lang="en">
+              mediumint(10)
+            </td>
+            <td>Non</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Index</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nom de l'index</th>
+                <th>Type</th>
+                <th>Unique</th>
+                <th>Compressé</th>
+                <th>Colonne</th>
+                <th>Cardinalité</th>
+                <th>Interclassement</th>
+                <th>Null</th>
+                <th>Commentaire</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Oui</td>
+                  <td rowspan="1">Non</td>
+
+                                                          <td>
+                      ID
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>Non</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+  </div>
+
+<p class="print_ignore">
+  <input type="button" class="btn btn-secondary button" id="print" value="Imprimer">
+</p>
+  </div>
+  <div id="selflink" class="print_ignore"><a href="http://localhost:8090/phpmyadmin/index.php?route=%2Fdatabase%2Fdata-dictionary&amp;db=salon&amp;server=1" title="Ouvrir une nouvelle fenêtre phpMyAdmin" target="_blank" rel="noopener noreferrer"><img src="Version%20imprimable%20-bdd%20salon_fichiers/dot.gif" title="Ouvrir une nouvelle fenêtre phpMyAdmin" alt="Ouvrir une nouvelle fenêtre phpMyAdmin" class="icon ic_window-new"></a></div>
+
+  <div class="clearfloat" id="pma_errors">
+    
+  </div>
+
+  
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+var debugSQLInfo = 'null';
+
+// ]]>
+</script>
+
+
+  
+  
+  
+
+</body></html>
